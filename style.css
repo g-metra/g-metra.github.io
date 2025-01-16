@@ -1,0 +1,39 @@
+div {
+    margin: 30px;
+}
+
+#header {
+    float: top;
+}
+
+#sidebar {
+    float: left;
+    margin-top: 25px;
+}
+
+.header_logo {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #444444;
+    font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header_title {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #777777;
+    font-size: small;
+    margin-top: 0px;
+}
+
+.menu_item {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #888888;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#margin_item {
+    margin-left: 15px;
+}
