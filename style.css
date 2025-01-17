@@ -2,13 +2,61 @@ div {
     margin: 30px;
 }
 
-#header {
-    float: top;
+.header {
+    float: none;
 }
 
-#sidebar {
+.sidebar {
     float: left;
     margin-top: 25px;
+}
+
+.content_box {
+    float: left;
+    width: 85%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #999999;
+}
+
+#content_title {
+    text-align: center;
+    color: #444444;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: x-large;
+}
+
+.link:link {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #999999;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.link:visited {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #999999;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link:hover {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #666666;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link:active {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #999999;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .header_logo {
@@ -22,18 +70,23 @@ div {
 .header_title {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #777777;
-    font-size: small;
+    font-size: medium;
     margin-top: 0px;
 }
 
 .menu_item {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    color: #888888;
-    font-size: small;
+    color: #666666;
+    font-size: medium;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#margin_item {
+.menu_item_margin {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    color: #888888;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 15px;
 }
