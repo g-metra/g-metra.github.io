@@ -1,14 +1,15 @@
-div {
-    margin: 30px;
-}
-
-.header {
-    float: none;
+.header{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .sidebar {
-    float: left;
-    margin-top: 25px;
+    position: relative;
+    width: 10%;
 }
 
 .content_box {
@@ -16,9 +17,9 @@ div {
     border-width: thin;
     border-style: solid;
     border-color: #999999;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 35%;
+    left: 25%;
 }
 
 .content_title {
@@ -50,12 +51,6 @@ div {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 90%;
-}
-
-.image_box_gif {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
     text-align: center;
 }
 
@@ -92,12 +87,17 @@ div {
     margin-bottom: 5px;
 }
 
+.logo_image {
+    margin-left: 30px;
+}
+
 .header_logo {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #444444;
     font-size: x-large;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 30px;
 }
 
 .header_title {
@@ -105,6 +105,7 @@ div {
     color: #777777;
     font-size: medium;
     margin-top: 0px;
+    margin-left: 30px;
 }
 
 .menu_item {
@@ -113,6 +114,7 @@ div {
     font-size: medium;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 30px;
 }
 
 .menu_item_margin {
@@ -121,5 +123,5 @@ div {
     font-size: medium;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-left: 45px;
 }
