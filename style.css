@@ -47,7 +47,7 @@
     text-align: center;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: small;
+    font-size: medium;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 70%;
@@ -71,9 +71,9 @@
     text-align: left;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: small;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
