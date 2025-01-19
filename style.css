@@ -67,7 +67,7 @@
     margin-right: auto;
 }
 
-.content_text {
+.content_list {
     text-align: left;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
@@ -79,6 +79,10 @@
     margin-right: auto;
 }
 
+.content_list_offset {
+    position: relative;
+    left: 25px;
+}
 
 .content_image {
     max-width: 100%;

@@ -52,68 +52,84 @@
 </div>
 
 <p class="content_heading">- Short description -</p>
-<p class="content_text">Counts down from the setpoint (the minimum value is 1 minute, the maximum is 5940 minutes).</p>
-<p class="content_text">Cross-platform (tested on windows and popular linux distributions).</p>
+<ul>
+<li class="content_list">Counts down from the setpoint (the minimum value is 1 minute, the maximum is 5940 minutes).</li>
+<li class="content_list">Cross-platform (tested on windows and popular linux distributions).</li>
+</ul>
 
 <div class="image_box">
 <img class="content_image" src="voronessa_crossplatform.png" width="836" height="117">
 </div>
 
-<p class="content_text">A style system, pre-defined styles, and the ability to customize your own.</p>
+<ul>
+<li class="content_list">A style system, pre-defined styles, and the ability to customize your own.</li>
+</ul>
 
 <div class="image_box">
 <img class="content_image" src="voronessa_styles.png" width="836" height="307">
 </div>
 
 <p class="content_heading">- How to start using? -</p>
-<p class="content_text">Install the binary build (only Windows x64).</p>
-<p class="content_text">For linux, you need to clone this <a href="https://github.com/g-metra/voronessa">repository</a> and run "main.py".</p>
+<ul>
+<li class="content_list">Install the binary build (only Windows x64).</li>
+<li class="content_list">For linux, you need to clone this <a href="https://github.com/g-metra/voronessa">repository</a> and run "main.py".</li>
+</ul>
 
 <p class="content_heading">- Usage features -</p>
-<p class="content_text">To close the countdown window, please use a double-click on the mouse or the Escape key.</p>
+<ul>
+<li class="content_list">To close the countdown window, please use a double-click on the mouse or the Escape key.</li>
+</ul>
 
 <p class="content_heading">- Using your own styles -</p>
-<p class="content_text">The clock_pack folder contains folders that define styles.</p>
-<p class="content_text">The folder defining the style contains folders with colors of this style and the service file "!empty" which indicates that this style should be enabled when the program is launched.</p>
-<p class="content_text">! If the file "!empty" is missing or the name is changed, the style will be absent after the program is launched.</p>
-<p class="content_text">The folder defining the style color contains image files from 0.png to 9.png that define the dial and the _0.png file defining the separator, it also contains the "include" file that includes the style color when the program is launched.</p>
-<p class="content_text">! If the file "include" is missing or the name is changed, the color will be absent after the program is launched.</p>
+<ul>
+<li class="content_list">The clock_pack folder contains folders that define styles.</li>
+<li class="content_list">The folder defining the style contains folders with colors of this style and the service file "!empty" which indicates that this style should be enabled when the program is launched.</li>
+<li class="content_list content_list_offset">If the file "!empty" is missing or the name is changed, the style will be absent after the program is launched.</li>
+<li class="content_list">The folder defining the style color contains image files from 0.png to 9.png that define the dial and the _0.png file defining the separator, it also contains the "include" file that includes the style color when the program is launched.</li>
+<li class="content_list content_list_offset">If the file "include" is missing or the name is changed, the color will be absent after the program is launched.</li>
+</ul>
 
 <div class="image_box">
 <img class="content_image" src="voronessa_styles_directory.png" width="836" height="307">
 </div>
 
-<p class="content_text">The image file must be in the format .png with a resolution of 192x360.</p>
-<p class="content_text">Have an opaque black background to avoid display problems.</p>
-<p class="content_text">The file names must be in decimal from 0 to 9, and the file name must match the digit in the image. File name for separator _0.png</p>
-<p class="content_text">"_0.png = :"</p>
-<p class="content_text">"0.png = 0"</p>
-<p class="content_text">"1.png = 1"</p>
-<p class="content_text">"2.png = 2"</p>
-<p class="content_text">"3.png = 3"</p>
-<p class="content_text">etc.</p>
-<p class="content_text"> — To sum up, to create your own style, you need:</p>
-<p class="content_text">Create a folder in the clock_pack directory with the name of your style.</p>
-<p class="content_text">Place or create a "!empty" file without an extension in this style folder.</p>
-<p class="content_text">Create a folder with the name of the color in this style folder.</p>
-<p class="content_text">Place or create a "include" file without an extension in this color folder.</p>
-<p class="content_text">Place the pre-prepared images in the color-determining folder.</p>
-<p class="content_text">Done!</p>
+<ul>
+<li class="content_list">The image file must be in the format .png with a resolution of 192x360.</li>
+<li class="content_list">Have an opaque black background to avoid display problems.</li>
+<li class="content_list">The file names must be in decimal from 0 to 9, and the file name must match the digit in the image. File name for separator _0.png</li>
+<li class="content_list">"_0.png = :"</li>
+<li class="content_list">"0.png = 0"</li>
+<li class="content_list">"1.png = 1"</li>
+<li class="content_list">"2.png = 2"</li>
+<li class="content_list">"3.png = 3"</li>
+<li class="content_list">etc.</li>
+<p class="content_list">To sum up, to create your own style, you need:</p>
+<li class="content_list">Create a folder in the clock_pack directory with the name of your style.</li>
+<li class="content_list">Place or create a "!empty" file without an extension in this style folder.</li>
+<li class="content_list">Create a folder with the name of the color in this style folder.</li>
+<li class="content_list">Place or create a "include" file without an extension in this color folder.</li>
+<li class="content_list">Place the pre-prepared images in the color-determining folder.</li>
+<li class="content_list">Done!</li>
+</ul>
 
 <p class="content_heading">- One more thing -</p>
-<p class="content_text">When creating the built-in styles, I used various fonts, all of them are "Free for commercial use" and "OFL". The list of fonts used when creating styles is in the file "fonts_used.txt ".</p>
-<p class="content_text"> — file contents "fonts_used.txt "</p>
-<p class="content_text">fonts used in styles:</p>
-<p class="content_text">Replicant Font by João G. Gonçalves</p>
-<p class="content_text">Exotica Font by Ivan Vetrov</p>
-<p class="content_text">Sankofa Font by Batsirai Madzonga</p>
-<p class="content_text">Accuratist Font by Elena Shkerdina, Ivan Gladkikh</p>
-<p class="content_text">BOX Font by Barry Shawn</p>
-<p class="content_text">Maori Font by Rob Hindley</p>
-<p class="content_text">JSFN Font by George Arnold</p>
-<p class="content_text">LT Basix Font by LyonsType</p>
-<p class="content_text">Balam Slab Font by Raúl Plancarte</p>
-<p class="content_text">Grith Font by Yosi Nasution</p>
+
+<ul>
+<li class="content_list">When creating the built-in styles, I used various fonts, all of them are "Free for commercial use" and "OFL". The list of fonts used when creating styles is in the file "fonts_used.txt".</li>
+<li class="content_list">File contents "fonts_used.txt":</li>
+<li class="content_list content_list_offset">fonts used in styles:</li>
+<li class="content_list content_list_offset">Replicant Font by João G. Gonçalves</li>
+<li class="content_list content_list_offset">Exotica Font by Ivan Vetrov</li>
+<li class="content_list content_list_offset">Sankofa Font by Batsirai Madzonga</li>
+<li class="content_list content_list_offset">Accuratist Font by Elena Shkerdina, Ivan Gladkikh</li>
+<li class="content_list content_list_offset">BOX Font by Barry Shawn</li>
+<li class="content_list content_list_offset">Maori Font by Rob Hindley</li>
+<li class="content_list content_list_offset">JSFN Font by George Arnold</li>
+<li class="content_list content_list_offset">LT Basix Font by LyonsType</li>
+<li class="content_list content_list_offset">Balam Slab Font by Raúl Plancarte</li>
+<li class="content_list content_list_offset">Grith Font by Yosi Nasution</li>
+</ul>
+
 
 </div>
 
