@@ -26,7 +26,7 @@
 .footer_label {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #777777;
-    font-size: small;
+    font-size: 0.7em;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@
     text-align: center;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: x-large;
+    font-size: 1.4em;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 90%;
@@ -46,7 +46,7 @@
     text-align: center;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 90%;
@@ -58,7 +58,7 @@
     text-align: center;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: large;
+    font-size: 1.2em;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90%;
@@ -70,7 +70,7 @@
     text-align: left;
     color: #444444;
     font-family: Arial, Helvetica, Ubuntu, Liberation;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 90%;
@@ -100,7 +100,7 @@
 .link:link {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #999999;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
     text-decoration: none;
@@ -109,7 +109,7 @@
 .link:visited {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #999999;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -117,7 +117,7 @@
 .link:hover {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #666666;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -125,7 +125,7 @@
 .link:active {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #999999;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -137,7 +137,7 @@
 .header_logo {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #444444;
-    font-size: x-large;
+    font-size: 1.6em;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 30px;
@@ -146,7 +146,7 @@
 .header_title {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #777777;
-    font-size: medium;
+    font-size: 0.9em;
     margin-top: 0px;
     margin-left: 30px;
 }
@@ -154,16 +154,16 @@
 .menu_item {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #666666;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 30px;
 }
 
-.menu_item_margin {
+.menu_offset {
     font-family: Arial, Helvetica, Ubuntu, Liberation;
     color: #888888;
-    font-size: medium;
+    font-size: 1.0em;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 45px;
