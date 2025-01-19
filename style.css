@@ -38,6 +38,9 @@
     font-size: x-large;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content_label {
@@ -47,7 +50,35 @@
     font-size: small;
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.content_heading {
+    text-align: center;
+    color: #444444;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_text {
+    text-align: left;
+    color: #444444;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: small;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .content_image {
     max-width: 100%;
