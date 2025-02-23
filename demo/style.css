@@ -1,0 +1,515 @@
+body {
+    background-image: url("bg.png");
+    background-size: auto;
+}
+
+.menu_box {
+    background-image: url("bg_m.png");
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 19%;
+}
+
+.menu_header {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.2em;
+    color: #5b5b5b;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu_sub_header {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    text-align: center;
+    font-size: 1em;
+    color: #5b5b5b;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.menu_choise {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    text-align: center;
+    font-size: 1em;
+    color: #5b5b5b;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.profile_box {
+    width: 550px;
+    height: 140px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 120px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.profile_item {
+    text-align: center;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    text-align: center;
+    font-size: 0.8em;
+    color: #5b5b5b;
+    /*margin-top: 75px;*/
+}
+
+.plav_item {
+    width: 70px;
+    height: 70px;
+    background-image: url("plav.png");
+    border-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apparat_item {
+    width: 70px;
+    height: 70px;
+    background-image: url("apparat.png");
+    border-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.press_item {
+    width: 70px;
+    height: 70px;
+    background-image: url("press.png");
+    border-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.termo_item {
+    width: 70px;
+    height: 70px;
+    background-image: url("termo.png");
+    border-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enginer_item {
+    width: 70px;
+    height: 70px;
+    background-image: url("enginer.png");
+    border-radius: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile:hover {
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.profile:link {
+    text-decoration: none;
+}
+
+.profile:visited {
+    text-decoration: none;
+}
+
+.profile:active {
+    text-decoration: none;
+}
+
+/* profile_demo REGION */
+
+.header {
+    background-image: url("bg_m.png");
+    /*width: 99%;*/
+    /*height: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    /*margin-top: 15px;*/
+    height: 10%;
+    padding: 10px;
+    margin-bottom: 1%;
+}
+
+.in_header {
+    /*width: 50%;*/
+    /*height: 90px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passport_tree {
+    background-image: url("bg_m.png");
+    width: 20%;
+    height: 85%;
+    /*height: auto;*/
+    /*height: 86%;*/
+    border-radius: 5px;
+    /*margin-top: 15px;*/
+    float: left;
+    /*margin-left: 0.5%;*/
+    /*min-height: 87%;*/
+}
+
+.passport_object {
+    background-image: url("bg_m.png");
+    width: 79%;
+    /*height: auto;*/
+    height: 85%;
+    border-radius: 5px;
+    /*margin-top: 15px;*/
+    float: right;
+    /*margin-right: 0.5%;*/
+    /*min-height: 87%;*/
+}
+
+
+.header_date {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 1.3em;
+    color: #5b5b5b;
+    text-align: center;
+    line-height: 0.1;
+    /*padding-top: 30px;*/
+    /*width: 300px;*/
+}
+
+.header_profile {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.7em;
+    color: #5b5b5b;
+    text-align: center;
+    line-height: 0.1;
+    /*width: 300px;*/
+}
+
+.pass_tree_title {
+    text-align: center;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.9em;
+    color: #5b5b5b;
+    height: 2%;
+    width: 100%;
+}
+
+.passport_object_title {
+    text-align: center;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.9em;
+    color: #5b5b5b;
+    height: 2%;
+}
+
+.tree_border {
+    width: 95%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ACACAC;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.chronology_border {
+    width: 95%;
+    height: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ACACAC;
+    border: 1px solid grey;
+    margin-bottom: 1%;
+    border-radius: 2px;
+}
+
+.tech_pass_border {
+    width: 96%;
+    height: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ACACAC;
+    border: 1px solid grey;
+    margin-bottom: 17px;
+    display: none;
+}
+
+#element_material {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 1em;
+    color: #5b5b5b;
+    padding-left: 10px;
+    line-height: 0.8;
+}
+
+#element_pass {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.8em;
+    color: #5b5b5b;
+    padding-left: 30px;
+    line-height: 0.5;
+}
+
+#chronology_item {
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.8em;
+    color: #5b5b5b;
+    padding-left: 5px;
+    line-height: 0.5;
+}
+
+.button_box {
+    width: 170px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.push_button {
+    width: 170px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PASSPORT REGION */
+
+table, th, td {
+    border: 1px solid grey;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 0.8em;
+    color: #2b2b2b;
+}
+
+table {
+    width: 100%;
+}
+
+
+.fix_size_1 {
+    width: 60px;
+    height: 70px;
+}
+
+.fix_size_2 {
+    width: 80px;
+}
+
+.fix_size_3 {
+    width: 60px;
+}
+
+.fix_size_4 {
+    width: 80px;
+}
+
+.fix_size_5 {
+    width: 65px;
+}
+
+.fix_size_6 {
+    width: 150px;
+}
+
+.fix_size_7 {
+    width: 80px;
+}
+
+.fix_size_8 {
+    width: 30px;
+}
+
+.fix_size_9 {
+    width: 150px;
+}
+
+.fix_size_10 {
+    width: 150px;
+}
+
+.fix_size_11 {
+    width: 30px;
+}
+
+.button_size_fix {
+    width: 30px;
+    height: 30px;
+}
+
+.fix_size_12 {
+    height: 50px;
+}
+
+.marks_and_release {
+    height: 30px;
+    font-size: 1.0em;
+    padding-left: 10px;
+}
+
+#boss {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 1.1em;
+}
+
+/* OVERLAY */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 50%;
+  height: 15%;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#apparat_dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#apparat_popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 50%;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#apparat_final {
+    display: none;
+}
+
+#press_final {
+    display: none;
+}
+
+#termoFinal_vto {
+    display: none;
+}
+
+#termoFinal_nto {
+    display: none;
+}
+
+#termoFinal_spec {
+    display: none;
+}
+
+#control_final_1 {
+    display: none;
+}
+
+#control_final_2 {
+    display: none;
+}
+
+.box_message {
+    text-align: center;
+    font-family: Arial, Helvetica, Ubuntu, Liberation;
+    font-size: 1em;
+    color: #5b5b5b;
+}
+
+.select_element {
+    width: 22%;
+}
+
+.select_element_2 {
+    width: 13%;
+}
+
+.input_element {
+    width: 15%;
+}
+
+.input_element_2 {
+    width: 5%;
+}
+
+.input_element_3 {
+    width: 10%;
+}
+
+.confirm_pass_button {
+    width: 15%;
+}
+
+/* operator dialog */
+
+.input_element_operator_box {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+}
+
+.input_element_operator_box_fixed {
+    width: 30%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+}
+
+#info_part {
+    height: 100%;
+    text-align: left;
+}
+
+.input_element_operator {
+    width: 100%;
+    text-align: center;
+}
+
+.confirm_button_box {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirm_button_operator {
+    width: 100%;
+    text-align: center;
+}
+
+#start_elements_dialog {
+    display: none;
+}

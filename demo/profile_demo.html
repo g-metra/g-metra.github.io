@@ -1,0 +1,349 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  </body>
+    <!-- CREATE PASSPORT -->
+    <div id="popup-overlay">
+      <div id="popup">
+        <p class="box_message">Выпуск технологического паспорта</p>
+        <select name="push_pass" id="push_select" class="select_element">
+          <option value="">Выпускает паспорт?</option>
+          <option value="brat">Иванов И.И.</option>
+          <option value="hitov">Артемов А.А.</option>
+          <option value="dyachkov">Путин В.В.</option>
+        </select>
+
+        <select name="materials" id="material_select" class="select_element_2">
+          <option value="">Материал</option>
+          <option value="sm2">Самарий16</option>
+          <option value="co5">Самарий4</option>
+          <option value="usc2">USOC-12</option>
+        </select>
+
+        <input type="text" id="slitok" placeholder="Номер слитка" class="input_element"></input>
+        <input type="text" id="number_of_pass" placeholder="№" class="input_element_2"></input>
+        <input type="text" id="part_name" placeholder="Наименование деталей" class="input_element"></input>
+        <input type="text" id="ttp_tp" placeholder="ТТП, ТП" class="input_element_3"></input>
+        <button onclick=hidePopup() class="confirm_pass_button">Выпустить</buttom>
+
+      </div>
+    </div>
+
+    <!-- APPARAT DIALOG -->
+    <div id="apparat_dialog">
+        <div id="apparat_popup">
+          <div id="start_elements_dialog">
+          <p class="box_message" id="name_operation"></p>
+          <p class="box_message">Взять на выполнение под личностью?</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="operator_name" placeholder="Фамилия исполнителя" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("hide") class="confirm_button_operator">Взять на выполнение</buttom>
+          </div>
+          </div>
+
+        <div id="apparat_final">
+          <p class="box_message">Закрытие операции подготовки</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="mass" placeholder="Масса" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="fact_mass" placeholder="Фактическая полученная масса" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="pomol" placeholder="Время помола" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="set_smes" placeholder="Номер смеси" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="final_operator" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="press_final">
+          <p class="box_message">Закрытие операции прессования</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_parts" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="good_parts" placeholder="Количество годных" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="bad_parts" placeholder="Брак" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box_fixed">
+          <input type="text" id="info_part" placeholder="Наименование спресованных деталей" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="final_operator_press" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="termoFinal_spec">
+          <p class="box_message">Закрытие операции спекания</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_parts_spec" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="info_part_spec" placeholder="Номер садки" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="final_operator_spec" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="termoFinal_vto">
+          <p class="box_message">Закрытие операции высокотемпературный отжиг</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_parts_vto" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="info_part_vto" placeholder="Номер садки" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="final_operator_vto" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="termoFinal_nto">
+          <p class="box_message">Закрытие операции низкотемпературный отжиг</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_parts_nto" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="info_part_nto" placeholder="Номер садки" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="final_operator_nto" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="control_final_1">
+          <p class="box_message">Закрытие операции контроль образцов</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_control_1" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="good_count_control_1" placeholder="Количество годных" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="control_operator_1" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        <div id="control_final_2">
+          <p class="box_message">Закрытие операции контроль заготовок</p>
+          <div class="input_element_operator_box">
+          <input type="text" id="count_control_2" placeholder="Количество" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="good_count_control_2" placeholder="Количество годных" class="input_element_operator"></input>
+          </div>
+          <div class="input_element_operator_box">
+          <input type="text" id="control_operator_2" placeholder="Фамилия закрывающего операцию" class="input_element_operator"></input>
+          </div>
+          <div class="confirm_button_box">
+          <button onclick=hideApparat("closed") class="confirm_button_operator">Закрыть операцию</buttom>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="header">
+      <div class="in_header">
+      <p class="header_date" id="current_datetime"></p>
+      <p class="header_profile">ПРОФИЛЬ: ИНЖЕНЕР</p>
+      <div class="button_box">
+      <button class="push_button" onclick="showPopup()">Выпустить паспорт</button>
+      </div>
+      </div>
+    </div>
+    <div class="passport_tree">
+      <p class="pass_tree_title">Дерево технологических паспортов</p>
+      <div class="tree_border" id="tree_sandbox">
+
+      </div>
+      <p class="pass_tree_title">Хронология</p>
+      <div class="chronology_border" id="chronology_sandbox">
+
+      </div>
+    </div>
+    <div class="passport_object">
+      <p class="passport_object_title">Технологический паспорт</p>
+      <div class="tech_pass_border" id="display_pass">
+        <table>
+          <tr>
+            <th>Внутренний паспорт №</th>
+            <th id="numberPassport"></th>
+            <th>TП</th>
+            <th id="ttptp"></th>
+          </tr>
+          <tr>
+            <th>Обозначение детали</th>
+            <th>Материал, марка</th>
+            <th>Номер слиточка</th>
+            <th>Номер смесички</th>
+          </tr>
+          <tr>
+            <th id="part_index"></th>
+            <th id="material_index"></th>
+            <th id="slitochek"></th>
+            <th id="numberSmesi">НЕ НАЗНАЧЕНО</th>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="marks_and_release">Особые отметки</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+          <th class="fix_size_1">Намбер оф оператион</th>
+          <th class="fix_size_2">Имя операции, что?</th>
+          <th class="fix_size_3">Дата</th>
+          <th class="fix_size_4">Фамилия рабочего</th>
+          <th class="fix_size_5">Количество</th>
+          <th class="fix_size_6">Подпись рабочего</th>
+          <th class="fix_size_7">Принято годных</th>
+          <th class="fix_size_8">Не очень</th>
+          <th class="fix_size_9">Примечание</th>
+          <th class="fix_size_10">Подпись ответственного лица</th>
+          <th class="fix_size_11"></th>
+          </tr>
+          <tr>
+          <th class="fix_size_12">000</th>
+          <th>Подготовочка</th>
+          <th id="apparat_date"></th>
+          <th id="last_name_apparat"></th>
+          <th id="general_mass"></th>
+          <th></th>
+          <th id="final_mass"></th>
+          <th></th> <!-- брак -->
+          <th id="time_pomol"></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("apparat")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">111</th>
+          <th>Пресс-мэн</th>
+          <th id="press_date"></th>
+          <th id="last_name_press"></th>
+          <th id="count_part"></th>
+          <th></th>
+          <th id="fact_part"></th>
+          <th id="bad_part"></th>
+          <th id="info_parts"></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("press_man")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">222</th>
+          <th>Запекание</th>
+          <th id="termo_1_date"></th>
+          <th id="last_name_termo_1"></th>
+          <th id="count_part_spec"></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th id="count_sadka_spec"></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("termo_1")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">333</th>
+          <th>ВТО</th>
+          <th id="termo_2_date"></th>
+          <th id="last_name_termo_2"></th>
+          <th id="count_part_vto"></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th id="count_sadka_vto"></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("termo_2")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">444</th>
+          <th>НТО</th>
+          <th id="termo_3_date"></th>
+          <th id="last_name_termo_3"></th>
+          <th id="count_part_nto"></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th id="count_sadka_nto"></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("termo_3")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">555</th>
+          <th>Контроль раз</th>
+          <th id="control_1_date"></th>
+          <th id="last_name_control_1"></th>
+          <th id="count_control_part_1"></th>
+          <th></th>
+          <th id="good_part_control_1"></th>
+          <th id="bad_control_1"></th>
+          <th></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("control_1")>✋</button></th>
+          </tr>
+
+          <tr>
+          <th class="fix_size_12">666</th>
+          <th>Контроль два</th>
+          <th id="control_2_date"></th>
+          <th id="last_name_control_2"></th>
+          <th id="count_control_part_2"></th>
+          <th></th>
+          <th id="good_part_control_2"></th>
+          <th id="bad_control_2"></th>
+          <th></th>
+          <th></th>
+          <th><button class="button_size_fix" onclick=showApparat("control_2")>✋</button></th>
+          </tr>
+
+        </table>
+        
+        <table>
+          <tr>
+            <td class="marks_and_release" id="boss">Ответственный за запись технологических операций:</td>
+          </tr>
+        </table>
+        
+      </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
